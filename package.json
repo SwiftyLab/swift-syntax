@@ -1,0 +1,27 @@
+{
+  "name": "SwiftCollections",
+  "version": "1.0.4",
+  "summary": "Swift Collections is an open-source package of data structure implementations for the Swift programming language.",
+  "description": "Unofficial pod for the swift-collections library.",
+  "homepage": "https://github.com/apple/swift-collections",
+  "license": "Apache License, Version 2.0",
+  "author": {
+    "name": "Soumya Ranjan Mahunt",
+    "email": "soumya.mahunt@gmail.com",
+    "url": "https://twitter.com/soumya_mahunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apple/swift-collections.git"
+  },
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "swiftylab-ci": "github:SwiftyLab/ci"
+  },
+  "scripts": {
+    "prepare": "node utils/setup.js",
+    "push": "node utils/push.js",
+    "pod-lint": "npm exec --package=swiftylab-ci -- pod-lint.js"
+  }
+}
