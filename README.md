@@ -1,3 +1,3 @@
-# SwiftCollections
+# SwiftSyntax
 
-Unofficial CocoaPods pod for the [swift-collections](https://github.com/apple/swift-collections) library.
+Unofficial CocoaPods pod for the [swift-syntax](https://github.com/apple/swift-syntax) library.
