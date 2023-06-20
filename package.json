@@ -1,9 +1,9 @@
 {
-  "name": "SwiftCollections",
-  "version": "1.0.4",
-  "summary": "Swift Collections is an open-source package of data structure implementations for the Swift programming language.",
-  "description": "Unofficial pod for the swift-collections library.",
-  "homepage": "https://github.com/apple/swift-collections",
+  "name": "SwiftSyntax",
+  "version": "509.0.0-swift-DEVELOPMENT-SNAPSHOT-2023-06-05-a",
+  "summary": "A set of Swift libraries for parsing, inspecting, generating, and transforming Swift source code.",
+  "description": "Unofficial pod for the swift-syntax library.",
+  "homepage": "https://github.com/apple/swift-syntax",
   "license": "Apache License, Version 2.0",
   "author": {
     "name": "Soumya Ranjan Mahunt",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apple/swift-collections.git"
+    "url": "https://github.com/apple/swift-syntax.git"
   },
   "private": true,
   "dependencies": {
