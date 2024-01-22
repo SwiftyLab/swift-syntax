@@ -1,6 +1,6 @@
 require 'json'
 
-module SwiftCollections
+module SwiftSyntax
   module Spec
     def define(has_files = true)
       podspec_path = caller.find do |trace|
@@ -36,7 +36,9 @@ module SwiftCollections
       self.osx.deployment_target     = '10.15'
 
       if has_files
-        self.source_files = "Sources/#{self.module_name}/**/*.*"
+        self.source_files = "Sources/#{self.module_name}/**/*.{swift,m,c,h}", "Sources/#{self.module_name}/**/*.docc/**/*.*"
+        self.preserve_paths = "Sources/#{self.module_name}/**/*.*"
+        self.exclude_files = '**/CMakeLists.txt'
       end
     end
   end

@@ -11,6 +11,7 @@ execSync('npm install', {
 core.endGroup();
 
 [
+  'SwiftSyntax509.podspec',
   'SwiftSyntaxLib.podspec',
   'SwiftBasicFormat.podspec',
   '_InstructionCounter.podspec',

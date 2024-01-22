@@ -1,6 +1,6 @@
 {
   "name": "SwiftSyntax",
-  "version": "509.0.0-swift-DEVELOPMENT-SNAPSHOT-2023-06-05-a",
+  "version": "509.1.0",
   "summary": "A set of Swift libraries for parsing, inspecting, generating, and transforming Swift source code.",
   "description": "Unofficial pod for the swift-syntax library.",
   "homepage": "https://github.com/apple/swift-syntax",

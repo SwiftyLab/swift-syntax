@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   require_relative 'utils/spec'
-  s.extend SwiftCollections::Spec
+  s.extend SwiftSyntax::Spec
   s.define(false)
 
   s.default_subspec = 'Lib'
@@ -60,10 +60,11 @@ Pod::Spec.new do |s|
     ss.dependency 'SwiftSyntaxMacrosTestSupport', "= #{s.version}"
   end
 
-  s.app_spec do |as|
-    as.source_files = "Sources/lit-test-helper/**/*.swift"
-    as.dependency 'SwiftSyntax/Lib'
-    as.dependency 'SwiftSyntax/Parser'
-    as.dependency 'SwiftSyntax/IDEUtils'
+  s.test_spec 'PerformanceTest' do |ts|
+    ts.source_files = "Tests/PerformanceTest/**/*.swift"
+    ts.dependency '_InstructionCounter', "= #{s.version}"
+    ts.dependency 'SwiftSyntax/IDEUtils', "= #{s.version}"
+    ts.dependency 'SwiftSyntax/Parser', "= #{s.version}"
+    ts.dependency 'SwiftSyntax/Lib', "= #{s.version}"
   end
 end
